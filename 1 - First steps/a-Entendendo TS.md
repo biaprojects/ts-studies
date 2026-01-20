@@ -120,3 +120,10 @@ Se aparecer algo como:
 
 v18.x.x
 9.x.x
+
+### Instalando o TypeScript
+Rode o comando  
+`npm install -g typescript`
+
+Verifique:  
+`tsc -v`
