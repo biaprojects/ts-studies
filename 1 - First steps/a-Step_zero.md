@@ -1,5 +1,6 @@
 # TypeScript
-É um **superset do JavaScript**, ou seja, uma linguagem que engloba os recursos do JavaScript.
+É um **superset do JavaScript**, ou seja, uma linguagem que engloba os recursos do JavaScript.  
+Então, o TypeScript tem tudo o que o JavaScript tem, mas com recursos extras.  
 
 Ele tem uma tipagem estática opcional e compila para JavaScript.
 
