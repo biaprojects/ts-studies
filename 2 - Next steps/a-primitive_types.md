@@ -94,3 +94,15 @@ const name = "Bia";   // TS já sabe que é string
 
 Diferente do Java, você não precisa declarar tudo.  
 Mas diferente do Python, o tipo não muda depois.
+
+
+# Any
+```typescript
+let value: any = 10;
+value = "texto";
+value = true;
+```
+
+Isso basicamente significa:  
+- desligar o TypeScript  
+Porque qualquer coisa é permitida.  
