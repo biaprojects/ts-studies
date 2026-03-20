@@ -77,3 +77,107 @@ const numbers = [1,2,3];
 numbers.push(4); // permitido
 ```
 
+# Funções úteis
+|    função   |                    ação                    |
+| ----------- | ------------------------------------------ |
+|    push()   |             adiciona no final              |
+|   .pop()    |  remove o último (também retorna o valor)  |
+|   .shift()  | remove o primeiro (também retorna o valor) |
+| .unshift()  |             adiciona no começo             |
+|   .length   |                   tamanho                  |
+|  includes() |             verifica se existe             |
+|  .indexOf() |       retorna a posição do elemento        |
+
+Outras funções:
+- **.map()**  
+  Transforma cada elemento do array.  
+  Exemplo:
+
+  ```typescript
+  let numbers = [1,2,3];
+
+  let doubled = numbers.map(n => n * 2);
+  ```
+
+  O resultado será:
+  [2, 4, 6]
+
+
+  Outro exemplo:
+
+  ```typescript
+  let names = ["ana", "bia"];
+
+  let upper = names.map(n => n.toUpperCase());
+  ```
+
+  Resultado:  
+  ["ANA", "BIA"]
+
+- **.filter()**
+  Remove elementos que não passam na condição.
+  Exemplo:
+
+  ```typescript
+  let numbers = [1,2,3,4,5];
+
+  let even = numbers.filter(n => n % 2 === 0);
+  ```
+
+  Resultado:  
+  [2,4]
+
+  Explicação:
+
+
+  Outro exemplo:
+  ```typescript
+  let names = ["Ana", "Bia", "Carlos"];
+
+  let result = names.filter(n => n.length > 3);
+  ```
+
+  Resultado:  
+  ["Carlos"]
+
+- **.find()**
+  Para encontrar um elemento.  
+  Retorna o primeiro elemento que satisfaz a condição.
+
+  ```typescript
+  let numbers = [10,20,30,40];
+
+  let result = numbers.find(n => n > 25);
+  ```
+
+  Resultado:  
+  30
+
+  Importante:  
+  - find() retorna um valor, não um array.
+
+- **.forEach()**
+  Percorre o array.  
+
+  ```typescript
+  let numbers = [1,2,3];
+
+  numbers.forEach(n => {
+    console.log(n);
+  });
+  ```
+
+  Resultado:
+
+  1
+  2
+  3
+
+Resumindo as diferenças:  
+
+| Função  |  Retorna   |
+| ------- | ---------- |
+|   map   | novo array |
+|  filter | novo array |
+|   find  |  um valor  |
+| forEach |	   nada    |
