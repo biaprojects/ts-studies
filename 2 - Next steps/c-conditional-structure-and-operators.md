@@ -31,3 +31,29 @@ if (score >= 90) {
   console.log("C");
 }
 ```
+
+# Operadores de igualdade em JavaScript
+Existem dois tipos de igualdade:
+
+- ==  
+  Igualdade frouxa  
+  Converte tipos automaticamente.   
+  Por exemplo:  
+  5 == "5"  
+  Resultado: True
+- ===  
+  Igualdade estrita
+  Não converte tipos.  
+  Exemplo:  
+  5 === "5"  
+  Resultado: False  
+
+
+# Operadores lógicos
+Vamos fazer uma comparação:  
+
+| Python | Java | TypeScript |
+| :----: | :--: | :--------: |
+|   and  |  &&  |     &&     |
+|   or   |  \|  |     \|     |
+|   not  |   !  |      !     |
