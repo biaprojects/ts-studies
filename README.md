@@ -27,3 +27,4 @@ O objetivo é consolidar conhecimentos, praticar conceitos e servir como materia
 
 - [Arrays](https://github.com/biaprojects/ts-studies/blob/main/2%20-%20Next%20steps/b-arrays.md)
 
+- [Estruturas condicionais e operadores](https://github.com/biaprojects/ts-studies/blob/main/2%20-%20Next%20steps/c-conditional-structure-and-operators.md)
