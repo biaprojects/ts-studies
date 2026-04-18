@@ -19,6 +19,7 @@ while (action != 5) {
     action = Number(input)
     
     if (action === 1) {
+        // Register person
         console.log("\nOk, let's register a new person!")
 
         let name: string = prompt("Type the person's name: ")
@@ -31,6 +32,7 @@ while (action != 5) {
     }
     
     if (action === 2) {
+        // List people
         console.log(`\nThere are ${people.length} people registered, they are:`)
         people.forEach(
             person => {console.log(`Name: ${person.name} - ${person.age} years old`)}
