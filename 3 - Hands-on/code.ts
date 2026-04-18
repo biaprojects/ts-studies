@@ -29,6 +29,12 @@ while (action != 5) {
         people.push({name, age})
         console.log()
     }
+    
+    if (action === 2) {
+        console.log(`\nThere are ${people.length} people registered, they are:`)
+        people.forEach(
+            person => {console.log(`Name: ${person.name} - ${person.age} years old`)}
+        )
+        console.log()
+    }
 }
-
-console.log(people)
