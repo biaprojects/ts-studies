@@ -1,5 +1,5 @@
 // to install use: npm install prompt-sync
-import * as promptSync from "prompt-sync";
+import promptSync from "prompt-sync";
 
 const prompt = promptSync()
 
@@ -38,5 +38,24 @@ while (action != 5) {
             person => {console.log(`Name: ${person.name} - ${person.age} years old`)}
         )
         console.log()
+    }
+
+    if (action === 3) {
+        // filter by older than 18
+        let quantity: number = 0
+        console.log()
+        console.log("Initiating filter of people older than 18 years old")
+        for (const person of people) {
+            if (person.age >= 18) {
+                console.log(`${person.name} is ${person.age} years old`)
+                quantity += 1
+            } 
+        }
+        if (quantity == 0) {
+            console.log("There are not anyone older than 18")
+            console.log()
+        } else {
+            console.log(`${quantity}/${people.length} older than 18\n`)
+        }
     }
 }
