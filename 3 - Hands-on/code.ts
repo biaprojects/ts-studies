@@ -58,4 +58,22 @@ while (action != 5) {
             console.log(`${quantity}/${people.length} older than 18\n`)
         }
     }
+
+    if (action === 4) {
+        // find someone by the name
+        let nameToVerify: string = prompt("Type the name you want to verify: ")
+        let names: string[] = []
+        for (const person of people) {
+            names.push(person.name)
+        }
+        const answer = names.includes(nameToVerify)
+
+        if (answer == true) {
+            console.log("Person registered!")
+            console.log()
+        } else {
+            console.log("Person not found")
+            console.log()
+        }
+    }
 }
